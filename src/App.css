@@ -1,38 +1,158 @@
 .App {
+  /* text-align: center; */
+  margin-top: 10%;
+  border: 2px solid green;
+  border-radius: 10px;
+  background-color: black;
+  width: 40%;
+  margin-left: 27%;
+  padding: 20px;
+}
+
+input[type=range] {
+  height: 34px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #002200;
+  background: #205928;
+  border-radius: 1px;
+  border: 1px solid #18D501;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 3px 3px 3px #00AA00;
+  border: 2px solid #83E584;
+  height: 23px;
+  width: 23px;
+  border-radius: 23px;
+  background: #439643;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #205928;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #002200;
+  background: #205928;
+  border-radius: 1px;
+  border: 1px solid #18D501;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 3px 3px 3px #00AA00;
+  border: 2px solid #83E584;
+  height: 23px;
+  width: 23px;
+  border-radius: 23px;
+  background: #439643;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #205928;
+  border: 1px solid #18D501;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #002200;
+}
+input[type=range]::-ms-fill-upper {
+  background: #205928;
+  border: 1px solid #18D501;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px #002200;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 3px 3px 3px #00AA00;
+  border: 2px solid #83E584;
+  height: 23px;
+  width: 23px;
+  border-radius: 23px;
+  background: #439643;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #205928;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #205928;
+}
+
+
+h1{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container{ 
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h3{
+  text-align: center;
+  color: whitesmoke;
+}
+
+body {
+  background-image: url("https://delinea.com/hubfs/Delinea/backgrounds/delinea-background-purple-tight.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.btn{
+  text-align: center;
+  margin-top: 20px;
+  /* background-color: aqua; */
+  color: ;
+}
+
+.numChar {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.length {
+  text-align: center;
+  margin-top: 20px;
+}
+
+label {
+  color: white;
+  font-weight: bold;
+  font-size: large;
+
+}
+
+button{ 
+  background-color:aquamarine;
+  color: #241651;
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: medium;
+  border-radius: 5px;
+
 }
