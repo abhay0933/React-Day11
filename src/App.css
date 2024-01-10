@@ -124,7 +124,8 @@ body {
   text-align: center;
   margin-top: 20px;
   /* background-color: aqua; */
-  color: ;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .numChar {
